@@ -5,5 +5,5 @@ WORKDIR /db
 
 ENTRYPOINT ["sqlite3"]
 CMD ["test.db"]
-CMD [".tables"]
-
+RUN /usr/bin/sqlite3 /db/test.db
+CMD /bin/bash
